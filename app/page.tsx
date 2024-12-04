@@ -29,11 +29,11 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
-          <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
+        <section className="py-6 md:py-10 lg:py-32">
+          <div className="container mx-auto max-w-[64rem] flex flex-col items-center gap-4 text-center">
             <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
               Connect and collaborate with ease
             </h1>
@@ -53,8 +53,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24">
-          <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+        <section className="py-8 md:py-12 lg:py-24 bg-slate-50 dark:bg-transparent">
+          <div className="container mx-auto max-w-[58rem] flex flex-col items-center space-y-4 text-center">
             <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
               Features
             </h2>
@@ -62,7 +62,7 @@ export default function Home() {
               Everything you need to stay connected and productive
             </p>
           </div>
-          <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-2 lg:grid-cols-4">
+          <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-2 lg:grid-cols-4">
             {features.map((feature) => (
               <div key={feature.title} className="relative overflow-hidden rounded-lg border bg-background p-2">
                 <div className="flex h-[180px] flex-col justify-between rounded-md p-6">
